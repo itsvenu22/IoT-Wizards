@@ -3,12 +3,11 @@ import time
 import os
 
 def offed():
-    GPIO.output(17, GPIO.LOW)
-    GPIO.output(18, GPIO.LOW)
-    GPIO.output(27, GPIO.LOW)
-    GPIO.output(22, GPIO.LOW)
-    GPIO.output(23, GPIO.LOW)
-    GPIO.output(21, GPIO.LOW)
+    pins_to_off = [17, 18, 27, 22, 23, 21]
+    GPIO.setmode(GPIO.BCM)
+    for pin in pins_to_off:
+        GPIO.output(pin, GPIO.LOW)
+
 '''
 def sev0(k):
 
