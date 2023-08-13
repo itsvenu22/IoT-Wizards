@@ -29,6 +29,7 @@ void setup() {
   servo1.attach(servoPin1);
   servo2.attach(servoPin2);
   servo3.attach(servoPin3);
+
   
   offed();
 }
