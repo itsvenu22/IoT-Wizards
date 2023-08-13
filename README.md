@@ -1,15 +1,12 @@
-<table>
-  <tr>
-    <td>
-      <img src="https://opengameart.org/sites/default/files/forum-attachments/giphy.gif" width="250"/>
-    </td>
-    <td>
-      <h1>IoT-Wizards</h1>
-      <p><strong>We won a hackathon conducted by The IEEE Photonics Society</strong></p>
-      <p>Welcome to the <strong>IoT-Wizards</strong> repository! This project is the result of our hard work and innovation, leading us to victory in the hackathon conducted by The IEEE Photonics Society. We're excited to share our achievement and showcase the IoT solution that impressed the judges.</p>
-    </td>
-  </tr>
-</table>
+# IoT-Wizards
+
+![IoT-Wizards Logo](https://opengameart.org/sites/default/files/forum-attachments/giphy.gif)
+
+**We won a hackathon conducted by The IEEE Photonics Society**
+
+Welcome to the **IoT-Wizards** repository! This project is the result of our hard work and innovation, leading us to victory in the hackathon conducted by The IEEE Photonics Society. We're excited to share our achievement and showcase the IoT solution that impressed the judges.
+
+
 
 ### :alembic: WizardryLangs, Spells and Wands Used 
 <h3 align="left">Languages and Tools:</h3>
