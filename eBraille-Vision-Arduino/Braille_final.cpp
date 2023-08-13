@@ -4,19 +4,20 @@ Servo servo1;
 Servo servo2;
 Servo servo3;
 
-const int ledPin1 = 13;
-const int ledPin2 = 12;
-const int ledPin3 = 8;
-const int ledPin4 = 7;
-const int ledPin5 = 4;
-const int ledPin6 = 2;
+#define LED_PIN_1 13
+#define LED_PIN_2 12
+#define LED_PIN_3 8
+#define LED_PIN_4 7
+#define LED_PIN_5 4
+#define LED_PIN_6 2
 
-const int servoPin1 = 11;
-const int servoPin2 = 10;
-const int servoPin3 = 9;
-const int servoPin4 = 6;
-const int servoPin5 = 5;
-const int servoPin6 = 3;
+#define SERVO_PIN_1 11
+#define SERVO_PIN_2 10
+#define SERVO_PIN_3 9
+#define SERVO_PIN_4 6
+#define SERVO_PIN_5 5
+#define SERVO_PIN_6 3
+
 
 
 void setup() {
@@ -30,6 +31,7 @@ void setup() {
   servo1.attach(servoPin1);
   servo2.attach(servoPin2);
   servo3.attach(servoPin3);
+
   
   offed();
 }
