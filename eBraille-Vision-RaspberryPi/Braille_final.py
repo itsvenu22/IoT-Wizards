@@ -5,12 +5,10 @@ import os
 GPIO.setmode(GPIO.BCM)
 
 def offed():
-    GPIO.output(17, GPIO.LOW)
-    GPIO.output(18, GPIO.LOW)
-    GPIO.output(27, GPIO.LOW)
-    GPIO.output(22, GPIO.LOW)
-    GPIO.output(23, GPIO.LOW)
-    GPIO.output(24, GPIO.LOW)
+    pins_to_off = [17, 18, 27, 22, 23, 24]
+    GPIO.setmode(GPIO.BCM)
+    for pin in pins_to_off:
+        GPIO.output(pin, GPIO.LOW)
 
 def sev0(k):
 
@@ -69,21 +67,16 @@ led_pin = [[5,12],[6,13],[19,26]]
 servo_pin = [[17,18],[27,22],[23,24]]
 
 
-GPIO.setup(17, GPIO.OUT)  
-GPIO.setup(18, GPIO.OUT)
-GPIO.setup(27, GPIO.OUT)
-GPIO.setup(22, GPIO.OUT)
-GPIO.setup(23, GPIO.OUT)
-GPIO.setup(24, GPIO.OUT)
+def setup_output_pins(pin_list):
+    GPIO.setmode(GPIO.BCM)
+    for pin in pin_list:
+        GPIO.setup(pin, GPIO.OUT)
 
-#for servo
-GPIO.setup(5, GPIO.OUT) 
-GPIO.setup(12, GPIO.OUT)
-GPIO.setup(6, GPIO.OUT)
-GPIO.setup(13, GPIO.OUT)
-GPIO.setup(19, GPIO.OUT)
-GPIO.setup(26, GPIO.OUT)
+standard_pins = [17, 18, 27, 22, 23, 24]
+servo_pins = [5, 12, 6, 13, 19, 26]
 
+setup_output_pins(standard_pins)
+setup_output_pins(servo_pins)
 
 try:
     offed()
